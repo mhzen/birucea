@@ -6,8 +6,8 @@ name: birucea
 description: Experimental Sericea-based image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/sericea-main
-image-version: 41 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/silverblue-main
+image-version: 42 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -21,13 +21,9 @@ modules:
     repos:
       files:
       - https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_%OS_VERSION%/home:manuelschneid3r.repo
-      - https://repos.fyralabs.com/terra%OS_VERSION%
-      copr:
-      - atim/i3status-rust
     install:
       packages:
         - albert
-        - i3status-rust
     remove:
       packages:
         - firefox
