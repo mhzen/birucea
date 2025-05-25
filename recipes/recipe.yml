@@ -21,6 +21,7 @@ modules:
     repos:
       files:
       - https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_%OS_VERSION%/home:manuelschneid3r.repo
+      - https://raw.githubusercontent.com/terrapkg/subatomic-repos/main/terra.repo
     install:
       packages:
         - albert
