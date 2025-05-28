@@ -29,6 +29,10 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+    replace:
+      packages:
+        - old: sway-config-fedora
+          new: sway-config-upstream
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
